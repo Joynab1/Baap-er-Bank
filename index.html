@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Baap er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl mt-4 text-center">Functional <span
+                class="text-rose-500 font-semibold">Baap-er-Bank</span>!!!</h1>
+    </header>
+    <main class="bg-gradient-to-r from-sky-300 to-rose-300 p-10 mt-5 w-4/5 mx-auto">
+        <!-- balance and transaction summary -->
+        <section class=" mt-8 w-3/4 mx-auto ">
+            <div class=" grid grid-cols-3 gap-4 text-white ">
+                <div class=" bg-yellow-500 p-8 rounded-lg">
+                    <h4 class=" text-3xl ">
+                        Total Deposit
+                    </h4>
+                    <h2 class="text-5xl font-medium">
+                        $<span id="deposit-total">00</span>
+                    </h2>
+                </div>
+                <div class=" bg-blue-500 p-8 rounded-lg">
+                    <h4 class=" text-3xl ">
+                        Total withdraw
+                    </h4>
+                    <h2 class="text-5xl font-medium">
+                        $<span id="withdraw-total">00</span>
+                    </h2>
+                </div>
+                <div class=" bg-purple-500 p-8 rounded-lg">
+                    <h4 class=" text-3xl ">
+                        Total balance
+                    </h4>
+                    <h2 class="text-5xl font-medium">
+                        $<span id="balance-total">1240</span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!-- deposit and withdraw -->
+        <section class="mt-6 ">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div class="bg-violet-500 p-8 rounded-lg">
+                    <h3 class="text-4xl mb-3">
+                        Your Deposit
+                    </h3>
+                    <input class="w-3/4 mx-auto px-4 py-2 "
+                    id="deposit-field" type="text" placeholder="$ Amount you want to deposit">
+                    <button id="btn-deposit" class="bg-rose-500 rounded-lg text-white hover:bg-rose-700 px-4 py-2 mt-3 block">Deposit</button>
+                </div>
+                <div class="bg-amber-500 p-8 rounded-lg">
+                    <h3 class="text-4xl mb-3">
+                        Your Withdraw
+                    </h3>
+                    <input class="w-3/4 mx-auto px-4 py-2"
+                    id="withdraw-field" type="text" placeholder="$ Amount you want to withdraw">
+                    <button id="btn-withdraw" class="bg-rose-500 rounded-lg text-white hover:bg-rose-700 px-4 py-2 mt-3 block">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
